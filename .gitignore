@@ -1,6 +1,7 @@
 # Prerequisites
 *.d
-
+.idea
+*.pyc
 # Object files
 *.o
 *.ko
