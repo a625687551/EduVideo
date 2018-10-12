@@ -12,7 +12,10 @@ class JikeSpider(Spider):
 
     def start_requests(self):
         self.logger.info("start parse")
-        yield Request(url=home_url, callback=self.parse_list)
+        yield Request(url=home_url, callback=self.parse_category_list)
+
+    def parse_category_list(self, response):
+        pass
 
     def parse_list(self, response):
         pass
